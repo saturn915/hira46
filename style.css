@@ -1,1 +1,162 @@
-body{font-family:sans-serif;background:#eef;display:flex;justify-content:center}.card{background:#fff;margin-top:30px;padding:20px;border-radius:16px;width:320px}#kana{text-align:center;font-size:90px}#ans{text-align:center;font-size:32px;height:40px}button{width:100%;padding:12px;margin:8px 0}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#eef3f8;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+
+}
+
+.container{
+
+    max-width:420px;
+    margin:40px auto;
+    padding:20px;
+
+}
+
+.card{
+
+    background:white;
+    border-radius:24px;
+    padding:30px;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+h1{
+
+    text-align:center;
+    margin-bottom:25px;
+    font-size:34px;
+
+}
+
+select{
+
+    width:100%;
+    padding:14px;
+    border-radius:14px;
+    border:1px solid #ddd;
+    font-size:18px;
+    margin-bottom:25px;
+
+}
+
+#kanaCard{
+
+    padding:25px 0;
+
+}
+
+#kana{
+
+    text-align:center;
+    font-size:110px;
+    font-weight:bold;
+    transition:.25s;
+
+}
+
+#answer{
+
+    text-align:center;
+    color:#2563eb;
+    font-size:38px;
+    height:45px;
+    margin-top:15px;
+
+}
+
+button{
+
+    width:100%;
+    padding:18px;
+    border:none;
+    border-radius:16px;
+    font-size:20px;
+    cursor:pointer;
+    margin-top:15px;
+    transition:.2s;
+
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+}
+
+button:active{
+
+    transform:scale(.98);
+
+}
+
+#answerBtn{
+
+    background:#2563eb;
+    color:white;
+
+}
+
+#nextBtn{
+
+    background:#10b981;
+    color:white;
+
+}
+
+.progressBox{
+
+    margin-top:28px;
+
+}
+
+.progressBar{
+
+    height:14px;
+    background:#ddd;
+    border-radius:30px;
+    overflow:hidden;
+
+}
+
+#progressFill{
+
+    width:0%;
+    height:100%;
+    background:#22c55e;
+    transition:.3s;
+
+}
+
+#progressText{
+
+    text-align:center;
+    margin-top:10px;
+    font-size:18px;
+    font-weight:bold;
+
+}
+
+@media (max-width:480px){
+
+    .container{
+
+        margin-top:15px;
+        padding:15px;
+
+    }
+
+    #kana{
+
+        font-size:90px;
+
+    }
+
+}
