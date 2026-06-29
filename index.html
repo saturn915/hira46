@@ -1,1 +1,72 @@
-<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>히라46</title><link rel='stylesheet' href='style.css'></head><body><div class='card'><h1>히라46</h1><div id='kana'></div><div id='ans'>?</div><button onclick='showAns()'>정답 보기</button><button onclick='nextKana()'>다음 글자</button><div id='prog'></div></div><script src='app.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>히라46</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>히라46</h1>
+
+        <select id="group">
+            <option value="all">전체</option>
+            <option value="a">あ행</option>
+            <option value="ka">か행</option>
+            <option value="sa">さ행</option>
+            <option value="ta">た행</option>
+            <option value="na">な행</option>
+            <option value="ha">は행</option>
+            <option value="ma">ま행</option>
+            <option value="ya">や행</option>
+            <option value="ra">ら행</option>
+            <option value="wa">わ행</option>
+        </select>
+
+        <div id="kanaCard">
+
+            <div id="kana">あ</div>
+
+            <div id="answer">?</div>
+
+        </div>
+
+        <button id="answerBtn">
+            정답 보기
+        </button>
+
+        <button id="nextBtn">
+            다음 글자
+        </button>
+
+        <div class="progressBox">
+
+            <div class="progressBar">
+
+                <div id="progressFill"></div>
+
+            </div>
+
+            <div id="progressText">
+
+                0 / 46
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
