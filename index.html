@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>히라46</title>
+
+<style>
+
+body{
+    margin:0;
+    background:#f3f5f7;
+    font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+}
+
+.container{
+
+    max-width:500px;
+    margin:40px auto;
+    padding:20px;
+
+}
+
+.card{
+
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+h1{
+
+text-align:center;
+margin-bottom:40px;
+
+}
+
+#kana{
+
+font-size:120px;
+text-align:center;
+font-weight:bold;
+
+}
+
+#answer{
+
+margin-top:20px;
+font-size:38px;
+text-align:center;
+color:#3b82f6;
+min-height:45px;
+
+}
+
+button{
+
+width:100%;
+padding:18px;
+margin-top:18px;
+border:none;
+border-radius:15px;
+font-size:20px;
+background:#2563eb;
+color:white;
+
+}
+
+button:active{
+
+transform:scale(.98);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h1>히라46</h1>
+
+<div id="kana">あ</div>
+
+<div id="answer">?</div>
+
+<button onclick="showAnswer()">정답 보기</button>
+
+<button onclick="nextKana()">다음 글자</button>
+
+</div>
+
+</div>
+
+<script>
+
+const data=[
+
+["あ","아"],
+["い","이"],
+["う","우"],
+["え","에"],
+["お","오"]
+
+];
+
+let current=0;
+
+function nextKana(){
+
+current=Math.floor(Math.random()*data.length);
+
+document.getElementById("kana").innerHTML=data[current][0];
+
+document.getElementById("answer").innerHTML="?";
+
+}
+
+function showAnswer(){
+
+document.getElementById("answer").innerHTML=data[current][1];
+
+}
+
+</script>
+
+</body>
+</html>
