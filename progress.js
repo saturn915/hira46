@@ -1,40 +1,35 @@
 let solved = 0;
 let total = 0;
 
-function resetProgress() {
+function resetProgress(count){
 
-    total = deck.length;
     solved = 0;
+    total = count;
 
-    updateProgress();
+    renderProgress();
 
 }
 
-function increaseProgress() {
+function nextProgress(){
 
     solved++;
 
-    updateProgress();
+    renderProgress();
 
 }
 
-function updateProgress() {
+function renderProgress(){
 
-    const fill = document.getElementById("fill");
-    const text = document.getElementById("progressText");
+    const fill =
+        document.getElementById("fill");
 
-    const percent =
-        total === 0 ? 0 : (solved / total) * 100;
+    const text =
+        document.getElementById("progressText");
 
-    fill.style.width = percent + "%";
+    fill.style.width =
+        (solved / total) * 100 + "%";
 
     text.textContent =
         solved + " / " + total;
-
-}
-
-function isFinished() {
-
-    return solved >= total;
 
 }
