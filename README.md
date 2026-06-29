@@ -1,2 +1,1 @@
-# hira46
-learning J
+# Hira46
