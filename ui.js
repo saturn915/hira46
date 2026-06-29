@@ -8,7 +8,7 @@ function showQuestion() {
     kanaEl.textContent = q[0];
     answerEl.textContent = "?";
 
-    increaseProgress();
+    nextProgress();
 
     if (isFinished()) {
 
