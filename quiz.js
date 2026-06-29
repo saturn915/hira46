@@ -21,6 +21,8 @@ function buildDeck() {
 
     shuffle(deck);
 
+    resetProgress(deck.length);
+    
 }
 
 function nextQuestion() {
